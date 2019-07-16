@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Interfaces\Repositories\**" />
+      <Compile Remove="Interfaces\Services\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Interfaces\Repositories\**" />
+      <EmbeddedResource Remove="Interfaces\Services\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Interfaces\Repositories\**" />
+      <None Remove="Interfaces\Services\**" />
+    </ItemGroup>
+
+</Project>
